@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './index.ts',
+  entry: {
+    'policy-server': './index.ts',
+    'policy-server.min': './index.ts'
+  },
   module: {
     rules: [
       {
@@ -12,13 +15,13 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ]
+    extensions: ['.tsx', '.ts', '.js']
   },
   devtool: "inline-source-map",
   output: {
-    filename: 'policy-server.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'lib'),
-    libraryTarget:'var',
-    library:'Posc'
+    libraryTarget: 'var',
+    library: 'Posc'
   }
 };

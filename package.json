@@ -2,7 +2,7 @@
   "name": "policy-client-js",
   "version": "0.0.1",
   "description": "A client in js for PolicyServer1",
-  "main": "lib/policy-server-js.min.js",
+  "main": "lib/policy-server.min.js",
   "scripts": {
     "compile": "webpack --config webpack.config.js",
     "watch": "webpack-dev-server --config webpack.dev.js",
