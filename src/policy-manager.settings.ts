@@ -1,20 +1,20 @@
-import { PolicyStore } from "./policy-store";
-import { StateStore } from "./state-store";
+import { PolicyStore } from './policy-store';
+import { StateStore } from './state-store';
 
 export interface PolicyManagerSettings {
-    authority: string;
-    clientId: string,
+  authority: string;
+  clientId: string;
 
-    requireHttpsMetadata: boolean;
-    
-    endpoints: PolicyManagerEndpointSettings;
+  requireHttpsMetadata: boolean;
 
-    policyStore: PolicyStore;
-    stateStore: StateStore;
+  endpoints: PolicyManagerEndpointSettings;
+
+  policyStore: PolicyStore;
+  stateStore: StateStore;
 }
 
 export interface PolicyManagerEndpointSettings {
-    discovery: string;
-    permission: string;
-    policy: string;
+  discovery: string;
+  permission: string;
+  policy: string;
 }

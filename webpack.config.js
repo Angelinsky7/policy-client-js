@@ -21,7 +21,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'lib'),
-    libraryTarget: 'var',
+    libraryTarget: 'umd',
     library: 'Posc'
   }
 };

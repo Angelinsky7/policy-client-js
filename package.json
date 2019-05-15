@@ -1,12 +1,13 @@
 {
-  "name": "policy-client-js",
-  "version": "0.0.1",
+  "name": "policy-client",
+  "version": "0.0.3",
   "description": "A client in js for PolicyServer1",
   "main": "lib/policy-server.min.js",
   "scripts": {
     "compile": "webpack --config webpack.config.js",
     "watch": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
